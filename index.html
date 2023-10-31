@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css层叠样式表/新拟态.css">
+    <title>主页</title>
+</head>
+<body>
+    <div class="slideshow">
+        <img src="./icos/aleksandr-popov-Hkrp734cElQ-unsplash.jpg" class="active">
+        <img src="./icos/annie-spratt-1TvI7eBGBck-unsplash.jpg">
+        <img src="./icos/white-rainforest-Yizp3xJopl8-unsplash.jpg">
+      </div>
+      
+      <!-- <div class="navigation">
+        <a class="active"></a>
+        <a></a>
+        <a></a>
+      </div> -->
+    <div class="container">
+        <div class="box">
+            <div class="img">
+                <a href="http://dreamer.beaa.cn/" target="_blank">
+                    <img src="./icos/小学生-removebg-preview.png"/>
+                </a>
+            </div>
+            <p>我的博客</p>
+        </div>
+        <div class="box">
+            <div class="img">
+                <a href="https://gptmj.adamchatbot.chat/" target="_blank">
+                    <img src="./icos/android-chrome-512x512.png"/>
+                </a>
+            </div>
+            <p>我的网站</p>
+        </div>
+        <div class="box">
+            <div class="img">
+                <a href="http://49.235.121.69:8088" target="_blank">
+                    <img src="./icos/若依.png"/>
+                </a>
+            </div>
+            <p>网站后台</p>
+        </div>
+        <div class="box">
+            <div class="img">
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="./icos/youtube.png"/>
+                </a>
+            </div>
+            <p>Youtube</p>
+        </div>
+        <div class="box">
+            <div class="img">
+                <a href="https://www.bilibili.com/" target="_blank">
+                    <img src="./icos/BILIBILI_LOGO (1).png"/>
+                </a>
+            </div>
+            <p>Bilibili</p>
+        </div>
+        <div class="box">
+            <div class="img">
+                <a href="https://www.github.com/" target="_blank">
+                    <img src="./icos/github.png"/>
+                </a>
+            </div>
+            <p>Github</p>
+        </div>
+        <div class="box">
+            <div class="img">
+                <a href="https://www.google.com/" target="_blank">
+                    <img src="./icos/谷歌_google115.png"/>
+                </a>
+            </div>
+            <p>Google</p>
+        </div>
+        <div class="box">
+            <div class="img">
+                <a href="https://www.baidu.com/" target="_blank">
+                    <img src="./icos/baidu.png"/>
+                </a>
+            </div>
+            <p>baidu</p>
+        </div>
+        <div class="box">
+            <div class="img">
+                <a href="https://www.bing.com/" target="_blank">
+                    <img src="./icos/Bing.png"/>
+                </a>
+            </div>
+            <p>必应</p>
+        </div>
+        <div class="box">
+            <div class="img">
+                <a href="https://gptgod.online/#/token" target="_blank">
+                    <img src="./icos/gptgod.svg"/>
+                </a>
+            </div>
+            <p>GPT-GOD</p>
+        </div>
+        <div class="box">
+            <div class="img">
+                <a href="http://49.235.121.69:5000/" target="_blank">
+                    <img src="./icos/favicon.ico"/>
+                </a>
+            </div>
+            <p>NAS界面</p>
+        </div>
+        <div class="box">
+            <div class="img">
+                <a href="https://vercel.com/liuchunk08/chat-gpt-midjourney" target="_blank">
+                    <img src="./icos/vercel.ico"/>
+                </a>
+            </div>
+            <p>Vercel</p>
+        </div>
+        <div class="box">
+            <div class="img">
+                <a href="https://dash.cloudflare.com/ba8e8348377cbc4114d1d360d0481c70/adamchatbot.chat" target="_blank">
+                    <img src="./icos/cloudflare.ico"/>
+                </a>
+            </div>
+            <p>cloudflare</p>
+        </div>
+        <div class="box">
+            <div class="img">
+                <a href="https://mp.weixin.qq.com/" target="_blank">
+                    <img src="./icos/公众号.ico"/>
+                </a>
+            </div>
+            <p>微信公众平台</p>
+        </div>
+    </div>
+    <script>
+        var images = document.querySelectorAll('.slideshow img');
+        var navigation = document.querySelectorAll('.navigation a');
+        var currentIndex = 0;
+        
+        function showImage(index) {
+          images.forEach(function(image) {
+            image.classList.remove('active');
+          });
+          
+          navigation.forEach(function(nav) {
+            nav.classList.remove('active');
+          });
+          
+          images[index].classList.add('active');
+          navigation[index].classList.add('active');
+        }
+        
+        function nextImage() {
+          currentIndex = (currentIndex + 1) % images.length;
+          showImage(currentIndex);
+        }
+        
+        setInterval(nextImage, 5000);
+      </script>
+</body>
+</html>
